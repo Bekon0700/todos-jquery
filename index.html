@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p class="title">Todo List</p>
+        <div class="main-container">
+            <form class="form-container" id="form">
+                <input type="text" name="todo" placeholder="Enter your todo here.." id="todoInput">
+                <button>submit</button>
+            </form>
+            <ul class="todo-list">
+                <li class="list-item">
+                    <p class="todo">Go to work</p>
+                    <div class="btn-container">
+                        <button class="btn btn-complete">mark as complete</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <p class="todo completed">Eat</p>
+                    <div class="btn-container">
+                        <button class="btn btn-complete">mark as complete</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
