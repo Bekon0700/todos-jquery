@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,41 @@
     <link rel="stylesheet" href="./style/main.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <p class="title">Todo List</p>
         <div class="main-container">
             <form class="form-container" id="form">
                 <input type="text" name="todo" placeholder="Enter your todo here.." id="todoInput">
-                <button>submit</button>
+                <button id="submit">submit</button>
             </form>
             <ul class="todo-list">
-                <li class="list-item">
-                    <p class="todo">Go to work</p>
+                <!-- <li class="list-item" id="todo-1">
+                    <p class="todo completed" id="title-1">Go to work</p>
                     <div class="btn-container">
-                        <button class="btn btn-complete">mark as complete</button>
-                        <button class="btn btn-delete">Delete</button>
+                        <button class="btn btn-complete" data-id='1'>Mark as incomplete</button>
+                        <button class="btn btn-delete" data-id="1">Delete</button>
                     </div>
                 </li>
-                <li class="list-item">
-                    <p class="todo completed">Eat</p>
+                <li class="list-item" id="todo-2">
+                    <p class="todo" id="title-2">Go to market</p>
                     <div class="btn-container">
-                        <button class="btn btn-complete">mark as complete</button>
-                        <button class="btn btn-delete">Delete</button>
+                        <button class="btn btn-complete" data-id='2'>Mark as complete</button>
+                        <button class="btn btn-delete" data-id="2">Delete</button>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
+        <div class="btn-group">
+            <button class="btn btn-all active-btn">All task</button>
+            <button class="btn btn-all">All completed task</button>
+            <button class="btn btn-all">All incompleted task</button>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

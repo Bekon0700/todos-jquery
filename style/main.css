@@ -11,6 +11,17 @@
   flex-direction: column;
   gap: 20px;
 }
+.container .btn-group {
+  margin-top: 100px;
+  display: flex;
+  gap: 8px;
+}
+.container .btn-group .btn-all {
+  background: rgb(0, 0, 0);
+}
+.container .btn-group .active-btn {
+  background-color: blue;
+}
 .container .title {
   font-size: 2rem;
   font-weight: 600;
@@ -40,7 +51,7 @@
   font-weight: 400;
   border-radius: 4px;
   border: none;
-  color: #ccc;
+  color: #fff;
   background-color: rgb(119, 119, 234);
   cursor: pointer;
   width: 25%;
@@ -78,6 +89,6 @@
   background-color: red;
 }
 
-.deleted {
+.completed {
   text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */
